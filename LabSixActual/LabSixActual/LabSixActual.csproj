@@ -71,6 +71,7 @@
     <Content Include="BookCheckOut.aspx" />
     <Content Include="Content\Images\thought-catalog-o0Qqw21-0NI-unsplash.jpg" />
     <Content Include="Home.aspx" />
+    <Content Include="Survay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +104,13 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Survay.aspx.cs">
+      <DependentUpon>Survay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survay.aspx.designer.cs">
+      <DependentUpon>Survay.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
