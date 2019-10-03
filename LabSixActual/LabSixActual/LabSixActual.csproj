@@ -70,6 +70,7 @@
     <Content Include="About.aspx" />
     <Content Include="BookCheckOut.aspx" />
     <Content Include="Content\Images\thought-catalog-o0Qqw21-0NI-unsplash.jpg" />
+    <Content Include="ExamplePage.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Survay.aspx" />
     <Content Include="Web.config" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="BookCheckOut.aspx.designer.cs">
       <DependentUpon>BookCheckOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamplePage.aspx.cs">
+      <DependentUpon>ExamplePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamplePage.aspx.designer.cs">
+      <DependentUpon>ExamplePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

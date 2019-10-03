@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Survay.aspx.cs" Inherits="LabSixActual.Survay" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -28,5 +30,5 @@
         
     <h4>Tell us what we can do to improve our service</h4>
     <input ID="Improve" Style="margin-left:30px; width: 343px; height: 96px;"/>
-
+    <asp:Button ID="Submit" runat="server" Text="Submit" />
 </asp:Content>
