@@ -72,6 +72,7 @@
     <Content Include="Content\Images\thought-catalog-o0Qqw21-0NI-unsplash.jpg" />
     <Content Include="ExamplePage.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Modal_Style.css" />
     <Content Include="Survay.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
