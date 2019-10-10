@@ -10,7 +10,7 @@ namespace LabSixActual
     public partial class Survay : System.Web.UI.Page
     {
         List<string> generas = new List<string>();
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             Resmess.Visible = false;
@@ -18,17 +18,14 @@ namespace LabSixActual
 
         protected void Submit_Click(object sender, EventArgs e)
         {
+            // liked generas -- fix the multiple issue
+            if (HORROR.Checked)
+                generas.Add(HORROR.ID);
+            if (ACTION.Checked)
+                generas.Add(ACTION.ID);
+            if (ROMANCE.Checked)
+                generas.Add(ROMANCE.ID);
             
-            // liked generas
-            if (!Page.IsPostBack)
-            {
-                if (HORROR.Checked)
-                    generas.Add(HORROR.ID);
-                if (ACTION.Checked)
-                    generas.Add(ACTION.ID);
-                if (ROMANCE.Checked)
-                    generas.Add(ROMANCE.ID);
-            }
             // favorite genera
             if (Hrr.Checked)
                 favGen.InnerText = "You like Horror the most";
