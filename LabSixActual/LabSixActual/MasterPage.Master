@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <%-- App script --%>
+    <script src="AppScript.js"></script>
 </head>
 <body>
     <%-- Menu bar --%>
@@ -24,6 +26,7 @@
                 <li><a href="Home.aspx">Home</a></li>
                 <li><a href="BookCheckOut.aspx">Store</a></li>
                 <li><a href="Survay.aspx">Survay</a></li>
+                <li><a href="Calculator.aspx">Calculator</a></li>
                 <li><a href="About.aspx">About</a></li>
             </ul>
         </div>

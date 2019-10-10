@@ -18,21 +18,33 @@ namespace LabSixActual
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            if (HORROR.Checked)
-                generas.Add(HORROR.ID);
-            if (ACTION.Checked)
-                generas.Add(ACTION.ID);
-            if (ROMANCE.Checked)
-                generas.Add(ROMANCE.ID);
+            
+            // liked generas
+            if (!Page.IsPostBack)
+            {
+                if (HORROR.Checked)
+                    generas.Add(HORROR.ID);
+                if (ACTION.Checked)
+                    generas.Add(ACTION.ID);
+                if (ROMANCE.Checked)
+                    generas.Add(ROMANCE.ID);
+            }
+            // favorite genera
+            if (Hrr.Checked)
+                favGen.InnerText = "You like Horror the most";
+            if (Act.Checked)          
+                favGen.InnerText = "You like Action the most";
+            if (Rom.Checked)          
+                favGen.InnerText = "You like Romance the most";
 
-
+            // genera list 
             foreach (var thing in generas)
             {
                 generaList.InnerHtml += "<li>" + thing + "</li>";
             }
 
-            favBook.InnerText += favoriteBook.Text;
-            why.InnerText += favoriteWhy.Text;
+            favBook.InnerText = "Your favorite Book is " + favoriteBook.Text;
+            why.InnerText ="You like this Book because " + favoriteWhy.Text;
             why.InnerText.Replace("me", "you");
 
             if (yes.Checked)

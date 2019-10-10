@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AppScript.js" />
     <Content Include="BookCheckOut.aspx" />
+    <Content Include="Calculator.aspx" />
     <Content Include="Content\Images\thought-catalog-o0Qqw21-0NI-unsplash.jpg" />
     <Content Include="ExamplePage.aspx" />
     <Content Include="Home.aspx" />
@@ -90,6 +92,13 @@
     </Compile>
     <Compile Include="BookCheckOut.aspx.designer.cs">
       <DependentUpon>BookCheckOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.aspx.cs">
+      <DependentUpon>Calculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calculator.aspx.designer.cs">
+      <DependentUpon>Calculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExamplePage.aspx.cs">
       <DependentUpon>ExamplePage.aspx</DependentUpon>

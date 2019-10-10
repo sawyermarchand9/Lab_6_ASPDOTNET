@@ -37,7 +37,7 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton HORROR;
+        protected global::System.Web.UI.WebControls.CheckBox HORROR;
         
         /// <summary>
         /// ACTION control.
@@ -46,7 +46,7 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ACTION;
+        protected global::System.Web.UI.WebControls.CheckBox ACTION;
         
         /// <summary>
         /// ROMANCE control.
@@ -55,7 +55,34 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ROMANCE;
+        protected global::System.Web.UI.WebControls.CheckBox ROMANCE;
+        
+        /// <summary>
+        /// Hrr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Hrr;
+        
+        /// <summary>
+        /// Act control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Act;
+        
+        /// <summary>
+        /// Rom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Rom;
         
         /// <summary>
         /// yes control.
@@ -64,7 +91,7 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton yes;
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton yes;
         
         /// <summary>
         /// no control.
@@ -73,7 +100,34 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton no;
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton no;
+        
+        /// <summary>
+        /// Good control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Good;
+        
+        /// <summary>
+        /// Okay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Okay;
+        
+        /// <summary>
+        /// Bad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Bad;
         
         /// <summary>
         /// Improve control.
@@ -110,6 +164,15 @@ namespace LabSixActual {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl generaList;
+        
+        /// <summary>
+        /// favGen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl favGen;
         
         /// <summary>
         /// favBook control.
