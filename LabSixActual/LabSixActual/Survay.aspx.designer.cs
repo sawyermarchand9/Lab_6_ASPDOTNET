@@ -103,31 +103,13 @@ namespace LabSixActual {
         protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton no;
         
         /// <summary>
-        /// Good control.
+        /// how_you_like control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Good;
-        
-        /// <summary>
-        /// Okay control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Okay;
-        
-        /// <summary>
-        /// Bad control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Bad;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect how_you_like;
         
         /// <summary>
         /// Improve control.
@@ -209,5 +191,14 @@ namespace LabSixActual {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl whatToDo;
+        
+        /// <summary>
+        /// like control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl like;
     }
 }

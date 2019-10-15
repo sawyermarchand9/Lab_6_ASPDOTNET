@@ -35,6 +35,7 @@ namespace LabSixActual
                 favGen.InnerText = "You like Romance the most";
 
             // genera list 
+            generaList.InnerHtml = ""; // reset list items
             foreach (var thing in generas)
             {
                 generaList.InnerHtml += "<li>" + thing + "</li>";
@@ -49,8 +50,10 @@ namespace LabSixActual
             else
                 readOften.InnerText = "you should read more";
 
+            like.InnerHtml = "You thought the survay was " + how_you_like.Value;
             whatToDo.InnerText = "Heres what you sugested for us to do: " + Improve.Text;
             Resmess.Visible = true;
+
         }
     }
 }
