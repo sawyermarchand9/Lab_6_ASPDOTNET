@@ -3,7 +3,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="modal.css" rel="stylesheet" />
-    <script src="AppScript.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -17,27 +16,31 @@
     <br />
 
     <h4>Out of the these generas which do you like</h4>
-    <div style="margin-left:30px; padding-right:10px;">
-        <asp:CheckBox ID="HORROR" runat="server" /> Horror 
-        <asp:CheckBox ID="ACTION" runat="server" /> Action 
-        <asp:CheckBox ID="ROMANCE" runat="server" /> Romance
-        <br />
-    </div>
+    <asp:CheckBoxList ID="generas" runat="server">
+        <asp:ListItem Text="Horror" Value="Horror"></asp:ListItem>
+        <asp:ListItem Text="Action" Value="Action"></asp:ListItem>
+        <asp:ListItem Text="Romance" Value="Romance"></asp:ListItem>
+    </asp:CheckBoxList>
 
     <%-- Add toggle radio buttons --%>
     <h4>Which of these do you like the most</h4>
-    <div style="margin-left:30px; padding-right:10px;">
-        <input type="radio" name="rad" id="Hrr" data-waschecked="true"  runat="server"/> Horror
-        <input type="radio" name="rad" id="Act" data-waschecked="true"  runat="server"/> Action
-        <input type="radio" name="rad" id="Rom" data-waschecked="true" runat="server"/> Romance
-    </div>
+    <asp:RadioButtonList ID="mostLiked" runat="server">
+        <asp:ListItem Text="Horror" Value="Horror"></asp:ListItem>
+        <asp:ListItem Text="Action" Value="Action"></asp:ListItem>
+        <asp:ListItem Text="Romance" Value="Romance"></asp:ListItem>
+    </asp:RadioButtonList>
 
     <h4>&nbsp;Do you read often?</h4>
-    <div style="margin-left:30px;">
+    <%--<div style="margin-left:30px;">
         <input type="radio" name="radsec2" id="yes" data-waschecked="true" runat="server"/> Yes
         <input type="radio" name="radsec2" id="no" data-waschecked="true" runat="server"/> No
         <br />
-    </div>
+    </div>--%>
+    <asp:RadioButtonList ID="likeReading" runat="server">
+        <asp:ListItem Text="yes" Value="yes"></asp:ListItem>
+        <asp:ListItem Text="no" Value="no"></asp:ListItem>
+    </asp:RadioButtonList>
+
     <h4>How would you rate this survay?</h4>
     <select style="margin-left:30px; padding-right:10px;" id="how_you_like" runat="server">
         <option id="Good" value="Good">Good</option>

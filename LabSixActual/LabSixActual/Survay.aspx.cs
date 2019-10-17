@@ -9,7 +9,7 @@ namespace LabSixActual
 {
     public partial class Survay : System.Web.UI.Page
     {
-        List<string> generas = new List<string>();
+        
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,41 +18,34 @@ namespace LabSixActual
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            // liked generas -- fix the multiple issue
-            if (HORROR.Checked)
-                generas.Add(HORROR.ID);
-            if (ACTION.Checked)
-                generas.Add(ACTION.ID);
-            if (ROMANCE.Checked)
-                generas.Add(ROMANCE.ID);
-            
-            // favorite genera
-            if (Hrr.Checked)
-                favGen.InnerText = "You like Horror the most";
-            if (Act.Checked)          
-                favGen.InnerText = "You like Action the most";
-            if (Rom.Checked)          
-                favGen.InnerText = "You like Romance the most";
-
-            // genera list 
-            generaList.InnerHtml = ""; // reset list items
-            foreach (var thing in generas)
-            {
-                generaList.InnerHtml += "<li>" + thing + "</li>";
-            }
-
+            // response modal content 
             favBook.InnerText = "Your favorite Book is " + favoriteBook.Text;
             why.InnerText ="You like this Book because " + favoriteWhy.Text;
             why.InnerText.Replace("me", "you");
 
-            if (yes.Checked)
-                readOften.InnerText = "It is good that you read often";
-            else
-                readOften.InnerText = "you should read more";
+            // list generas
+            generaList.InnerHtml = "";
+            foreach (ListItem item in generas.Items)
+            {
+                if (item.Selected)
+                    generaList.InnerHtml += "<li>" + item + "</li>"; 
+            }
+
+            // most liked
+            favGen.InnerText = "You like " + mostLiked.SelectedItem.Text + " the most";
+
+
+            // do you like reading?
+            readOften.InnerText = "Do you like to read often? " + likeReading.SelectedItem.Text;
 
             like.InnerHtml = "You thought the survay was " + how_you_like.Value;
             whatToDo.InnerText = "Heres what you sugested for us to do: " + Improve.Text;
             Resmess.Visible = true;
+
+
+
+
+
 
         }
     }

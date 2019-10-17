@@ -31,76 +31,31 @@ namespace LabSixActual {
         protected global::System.Web.UI.WebControls.TextBox favoriteWhy;
         
         /// <summary>
-        /// HORROR control.
+        /// generas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox HORROR;
+        protected global::System.Web.UI.WebControls.CheckBoxList generas;
         
         /// <summary>
-        /// ACTION control.
+        /// mostLiked control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ACTION;
+        protected global::System.Web.UI.WebControls.RadioButtonList mostLiked;
         
         /// <summary>
-        /// ROMANCE control.
+        /// likeReading control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ROMANCE;
-        
-        /// <summary>
-        /// Hrr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Hrr;
-        
-        /// <summary>
-        /// Act control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Act;
-        
-        /// <summary>
-        /// Rom control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Rom;
-        
-        /// <summary>
-        /// yes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton yes;
-        
-        /// <summary>
-        /// no control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton no;
+        protected global::System.Web.UI.WebControls.RadioButtonList likeReading;
         
         /// <summary>
         /// how_you_like control.
