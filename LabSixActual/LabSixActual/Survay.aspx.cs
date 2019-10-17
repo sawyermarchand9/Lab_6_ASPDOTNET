@@ -32,17 +32,19 @@ namespace LabSixActual
             }
 
             // most liked
-            favGen.InnerText = "You like " + mostLiked.SelectedItem.Text + " the most";
+            if (mostLiked.SelectedItem != null)
+                favGen.InnerText = "You like " + mostLiked.SelectedItem.Text + " the most";
 
 
             // do you like reading?
-            readOften.InnerText = "Do you like to read often? " + likeReading.SelectedItem.Text;
+            if(likeReading.SelectedItem != null)
+                readOften.InnerText = "Do you like to read often? " + likeReading.SelectedItem.Text;
 
             like.InnerHtml = "You thought the survay was " + how_you_like.Value;
             whatToDo.InnerText = "Heres what you sugested for us to do: " + Improve.Text;
             Resmess.Visible = true;
 
-
+            
 
 
 
