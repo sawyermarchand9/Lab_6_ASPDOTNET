@@ -18,12 +18,15 @@ namespace LabSixActual
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            // response modal content 
+            // response modal content
+            
+            // gets favorite book and sends it to result div
             favBook.InnerText = "Your favorite Book is " + favoriteBook.Text;
+
             why.InnerText ="You like this Book because " + favoriteWhy.Text;
             why.InnerText.Replace("me", "you");
 
-            // list generas
+            // gets list of generas and sends to result div 
             generaList.InnerHtml = "";
             foreach (ListItem item in generas.Items)
             {
@@ -34,7 +37,6 @@ namespace LabSixActual
             // most liked
             if (mostLiked.SelectedItem != null)
                 favGen.InnerText = "You like " + mostLiked.SelectedItem.Text + " the most";
-
 
             // do you like reading?
             if(likeReading.SelectedItem != null)

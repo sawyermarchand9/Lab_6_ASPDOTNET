@@ -41,11 +41,11 @@
     </form>
 
     <%-- Footer --%>
-    <hr />
+    <%--<hr />
     <div style="text-align:center;">
         <a style="padding-right:10px;">Contact Us</a>
         <a style="padding-right:10px;">FAQ</a>
         <a>Privacy Policy</a>
-    </div>
+    </div>--%>
 </body>
 </html>
