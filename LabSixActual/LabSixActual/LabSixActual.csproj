@@ -78,6 +78,7 @@
     <Content Include="Modal_Style.css" />
     <Content Include="Servay_two.aspx" />
     <Content Include="Survay.aspx" />
+    <Content Include="Survey_two_response.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="Survay.aspx.designer.cs">
       <DependentUpon>Survay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey_two_response.aspx.cs">
+      <DependentUpon>Survey_two_response.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey_two_response.aspx.designer.cs">
+      <DependentUpon>Survey_two_response.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,14 @@ namespace LabSixActual
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-
+            Session["FirstName"] = FirstName.Text;
+            Session["LastName"] = LastName.Text;
+            Session["Address"] = Address.Text;
+            Session["Zip"] = Zip.Text;
+            Session["Age"] = Age.Text;
+            Session["Phone"] = Phone;
+            Session["SurveyID"] = SurveyID.Text;
+            Response.Redirect("Survey_two_response.aspx");
         }
     }
 }
