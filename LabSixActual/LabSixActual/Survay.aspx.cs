@@ -16,15 +16,15 @@ namespace LabSixActual
             Resmess.Visible = false;
         }
 
+        #region Method for getting users information
         protected void Submit_Click(object sender, EventArgs e)
         {
-            // response modal content
-            
+
             // gets favorite book and sends it to result div
             favBook.InnerText = "Your favorite Book is " + favoriteBook.Text;
 
+            // gets why this is the users favorite book
             why.InnerText ="You like this Book because " + favoriteWhy.Text;
-            why.InnerText.Replace("me", "you");
 
             // gets list of generas and sends to result div 
             generaList.InnerHtml = "";
@@ -50,5 +50,6 @@ namespace LabSixActual
             Resmess.Visible = true;
 
         }
+        #endregion
     }
 }

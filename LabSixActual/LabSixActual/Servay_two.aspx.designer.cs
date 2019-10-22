@@ -19,7 +19,7 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText FirstName;
+        protected global::System.Web.UI.WebControls.TextBox FirstName;
         
         /// <summary>
         /// LastName control.
@@ -28,25 +28,25 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText LastName;
+        protected global::System.Web.UI.WebControls.TextBox LastName;
         
         /// <summary>
-        /// Adress control.
+        /// Address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Adress;
+        protected global::System.Web.UI.WebControls.TextBox Address;
         
         /// <summary>
-        /// ZipCode control.
+        /// Zip control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText ZipCode;
+        protected global::System.Web.UI.WebControls.TextBox Zip;
         
         /// <summary>
         /// Age control.
@@ -55,7 +55,16 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Age;
+        protected global::System.Web.UI.WebControls.TextBox Age;
+        
+        /// <summary>
+        /// Phone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Phone;
         
         /// <summary>
         /// SurveyID control.
@@ -64,7 +73,7 @@ namespace LabSixActual {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText SurveyID;
+        protected global::System.Web.UI.WebControls.TextBox SurveyID;
         
         /// <summary>
         /// Submit control.

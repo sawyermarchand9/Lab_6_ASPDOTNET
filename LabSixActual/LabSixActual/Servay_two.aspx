@@ -1,13 +1,46 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Servay_two.aspx.cs" Inherits="LabSixActual.Servay_two" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .txtBox {
+            margin-bottom:3px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p  >First Name </p>     <input type="text" id="FirstName"  runat="server"/>
-    <p  >Last Name </p>      <input type="text" id="LastName"   runat="server"/>
-    <p  >Adress</p>          <input type="text" id="Adress"     runat="server"/>
-    <p  >Zip Code</p>        <input type="text" id="ZipCode"    runat="server"/>
-    <p  >Age</p>             <input type="text" id="Age"        runat="server"/>
-    <p  >Phone Number</p>    <input type="text" id="PhoneNumber"runat="server"/>
-    <p  >Survey ID</p>       <input type="text" id="SurveyID"   runat="server"/>
-    <asp:Button ID="Submit" runat="server" Text="Submit" onclick="Submit_Click"/>
+   <%-- Lab 9 --%>
+
+   <%--
+       1. Please use 15_Example.aspx, and 15_2_Example.aspx as references for this lab.  
+       2. Continue work on lab8. Please add a new button for SurveyForm.aspx. When click this button, it will redirect to a new page called surveySummary.aspx.  
+       3. surveySummary.aspx page should contain all input information from SurveyForm.aspx. 
+   --%>
+    <form>
+        <div class="col-sm-2">
+        <p>First Name</p>
+        <p>Last Name</p>
+        <p>Address</p>
+        <p>Zip code</p>
+        <p>Age</p>
+        <p>Phone Number</p>
+        <p>Survey ID</p>
+    </div>
+    
+    <div class="col-sm-3">
+        <asp:TextBox ID="FirstName" class="txtBox" runat="server"></asp:TextBox>
+        <br />                     
+        <asp:TextBox ID="LastName" class="txtBox" runat="server"></asp:TextBox>
+        <br />                     
+        <asp:TextBox ID="Address" class="txtBox" runat="server"></asp:TextBox>
+        <br />                     
+        <asp:TextBox ID="Zip" class="txtBox" runat="server"></asp:TextBox>
+        <br />                     
+        <asp:TextBox ID="Age" class="txtBox" runat="server"></asp:TextBox>
+        <br />                     
+        <asp:TextBox ID="Phone" class="txtBox" runat="server"></asp:TextBox>
+        <br />                     
+        <asp:TextBox ID="SurveyID" class="txtBox" runat="server"></asp:TextBox>
+    </div>
+        <asp:Button ID="Submit" runat="server" Text="Button" />
+    </form> 
+    
 </asp:Content>
