@@ -13,57 +13,57 @@ namespace LabSixActual {
     public partial class Survey_two_response {
         
         /// <summary>
-        /// firstName control.
+        /// FavoriteBook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl firstName;
+        protected global::System.Web.UI.WebControls.Label FavoriteBook;
         
         /// <summary>
-        /// lastName control.
+        /// Why control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lastName;
+        protected global::System.Web.UI.WebControls.Label Why;
         
         /// <summary>
-        /// address control.
+        /// GeneraList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl address;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl GeneraList;
         
         /// <summary>
-        /// zip control.
+        /// MostLiked control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl zip;
+        protected global::System.Web.UI.WebControls.Label MostLiked;
         
         /// <summary>
-        /// age control.
+        /// SurveySais control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl age;
+        protected global::System.Web.UI.WebControls.Label SurveySais;
         
         /// <summary>
-        /// phone control.
+        /// Improve control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl phone;
+        protected global::System.Web.UI.WebControls.Label Improve;
     }
 }

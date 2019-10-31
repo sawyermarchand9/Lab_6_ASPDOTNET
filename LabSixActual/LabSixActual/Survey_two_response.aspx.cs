@@ -11,7 +11,13 @@ namespace LabSixActual
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            firstName.InnerText = (String)Session["FirstName"];
+            FavoriteBook.Text = (String)Session["FavoriteBook"];
+            Why.Text = (String)Session["Why"];
+            GeneraList.InnerHtml = (String)Session["GeneraList"];
+            MostLiked.Text = (String)Session["MostLiked"];
+            SurveySais.Text = (String)Session["SurveySais"];
+            Improve.Text = (String)Session["Improve"];
+
         }
     }
 }
