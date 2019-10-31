@@ -70,7 +70,13 @@
     <Content Include="About.aspx" />
     <Content Include="AppScript.js" />
     <Content Include="BookCheckOut.aspx" />
+    <Content Include="Books.xml" />
+    <Content Include="BooksDB.aspx" />
     <Content Include="Calculator.aspx" />
+    <Content Include="Content\Images\BookFour.jfif" />
+    <Content Include="Content\Images\BookOne.jfif" />
+    <Content Include="Content\Images\BookThree.jfif" />
+    <Content Include="Content\Images\Image Two.jfif" />
     <Content Include="Content\Images\thought-catalog-o0Qqw21-0NI-unsplash.jpg" />
     <Content Include="ExamplePage.aspx" />
     <Content Include="Home.aspx" />
@@ -89,12 +95,20 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App Programs\XMLAccess.cs" />
     <Compile Include="BookCheckOut.aspx.cs">
       <DependentUpon>BookCheckOut.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BookCheckOut.aspx.designer.cs">
       <DependentUpon>BookCheckOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BooksDB.aspx.cs">
+      <DependentUpon>BooksDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BooksDB.aspx.designer.cs">
+      <DependentUpon>BooksDB.aspx</DependentUpon>
     </Compile>
     <Compile Include="Calculator.aspx.cs">
       <DependentUpon>Calculator.aspx</DependentUpon>
