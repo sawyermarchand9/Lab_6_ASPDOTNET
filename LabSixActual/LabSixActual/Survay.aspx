@@ -62,7 +62,10 @@
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Submit" runat="server" Text="Submit" onclick="Submit_Click" Width="348px"/>
+        <asp:Button ID="Submit" runat="server" Text="On Page" onclick="Submit_Click" Width="348px"/>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ShowOnPage" runat="server" Text="Redirect" OnClick="ShowOnPage_Click" Width="348px"/>
     </div>
     <br />
 

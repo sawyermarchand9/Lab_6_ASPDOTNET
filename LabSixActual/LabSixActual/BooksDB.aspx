@@ -10,4 +10,10 @@
 
     <asp:Button ID="AddBook" runat="server" Text="Add" OnClick="AddBook_Click"/>
 
+    <p>Add book image</p><asp:FileUpload ID="FileUpload1" runat="server" OnLoad="FileUpload1_Load"/>
+
+    <p>Select Book to remove</p><asp:TextBox ID="BookName" runat="server"></asp:TextBox>
+
+    <asp:Button ID="Remove" runat="server" Text="Button" onclick="Remove_Click"/>
+
 </asp:Content>

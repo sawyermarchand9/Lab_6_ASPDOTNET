@@ -56,8 +56,12 @@ namespace LabSixActual
 
            
             Resmess.Visible = true;
+            
+        }
+        #endregion
 
-
+        protected void ShowOnPage_Click(object sender, EventArgs e)
+        {
             // Session information to be sent
             Session["FavoriteBook"] = favoriteBook.Text;
             Session["Why"] = favoriteWhy.Text;
@@ -67,6 +71,5 @@ namespace LabSixActual
             Session["Improve"] = Improve.Text;
             Response.Redirect("Survey_two_response.aspx");
         }
-        #endregion
     }
 }

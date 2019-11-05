@@ -1,23 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Books>
   <Book>
-    <title>Book One</title>
-    <author>Jimmy</author>
+    <Title>somethingelse</Title>
+    <Author>someone else</Author>
   </Book>
   <Book>
-    <title>Book Two</title>
-    <author>Timmy</author>
-  </Book>
-  <Book>
-    <title>Book Three</title>
-    <author>Gimmy</author>
-  </Book>
-  <Book>
-    <title>Book Four</title>
-    <author>Rimmy</author>
-  </Book>
-  <Book>
-    <Title>Book Five</Title>
-    <Author>Me</Author>
+    <Title>Book Two</Title>
+    <Author>Jimmy</Author>
   </Book>
 </Books>

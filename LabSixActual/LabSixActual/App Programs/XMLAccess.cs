@@ -61,26 +61,25 @@ public class XMLAccess
         }
     }
 
-    public string RemoveNode(String name)
+    public bool RemoveNode(String title)
     {
         XmlDocument xmlDocument = new XmlDocument();
         xmlDocument.Load(xmlPath);
 
-        XmlNode node = xmlDocument.SelectSingleNode(String.Format("Students/Student[name='{0}']", name));
+        XmlNode node = xmlDocument.SelectSingleNode(String.Format("Books/Book[Title='{0}']", title));
         if (node != null)
         {
             node.ParentNode.RemoveChild(node);
 
             xmlDocument.Save(xmlPath);
-            string retMsg = String.Format("Student {0} is removed from the xml database.", name);
-            return retMsg;
+            
+            return true;
         }
         else
         {
-            string notFound = String.Format("Student {0} is not in the xml database.", name);
-            return notFound;
+            
+            return false;
         }
-
     }
 
     public string SearchNode(String name)
@@ -88,12 +87,12 @@ public class XMLAccess
         XmlDocument xmlDocument = new XmlDocument();
         xmlDocument.Load(xmlPath);
 
-        XmlNode node = xmlDocument.SelectSingleNode(String.Format("Students/Student[name='{0}']", name));
+        XmlNode node = xmlDocument.SelectSingleNode(String.Format("Books/Book[title='{0}']", name));
         if (node != null)
             return node.OuterXml.ToString();
         else
         {
-            string notFound = String.Format("Student {0} is not in the xml database.", name);
+            string notFound = String.Format("The Book {0} is not in the xml database.", name);
             return notFound;
         }
 

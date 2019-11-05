@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +12,7 @@ namespace LabSixActual
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SurveyID.Text = ConfigurationManager.AppSettings["SurveyID"];
             FavoriteBook.Text = (String)Session["FavoriteBook"];
             Why.Text = (String)Session["Why"];
             GeneraList.InnerHtml = (String)Session["GeneraList"];

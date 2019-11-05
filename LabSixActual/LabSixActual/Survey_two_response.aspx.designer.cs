@@ -13,6 +13,15 @@ namespace LabSixActual {
     public partial class Survey_two_response {
         
         /// <summary>
+        /// SurveyID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SurveyID;
+        
+        /// <summary>
         /// FavoriteBook control.
         /// </summary>
         /// <remarks>
